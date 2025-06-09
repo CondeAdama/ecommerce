@@ -1,0 +1,113 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== GLASSMORPHISME ==== */
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+/* Header / Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a148c;
+}
+
+.retour-accueil {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ce93d8;
+    color: white;
+    font-weight: bold;
+}
+
+.retour-accueil:hover {
+    background-color: #ab47bc;
+}
+
+/* Section principale */
+main.contenu-paiement {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* Section des modes de paiement */
+.modes-paiement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.logo-paiement {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-paiement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+.logo-paiement img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-paiement p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #444;
+    background: rgba(255,255,255,0.6);
+}

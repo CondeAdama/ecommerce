@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    min-height: 100vh;
+    padding: 0px 20px 80px;
+    color: #333;
+  }
+
+  .navglass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a148c;
+  }
+
+  .retour-accueil {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ce93d8;
+    color: white;
+    font-weight: bold;
+  }
+
+  .retour-accueil:hover {
+    background-color: #ab47bc;
+  }
+
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a148c;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  input, textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #ce93d8;
+  }
+
+  button {
+    padding: 12px;
+    background-color: #ce93d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #ab47bc;
+  }
+
+  .info-contact {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+  }
