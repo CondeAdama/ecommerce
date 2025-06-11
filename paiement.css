@@ -90,8 +90,8 @@ main.contenu-paiement {
 }
 
 .logo-paiement img {
-  max-width: 100px;
-  height: auto;
+  width: 150px;
+  height: 150px;
   margin-bottom: 10px;
 }
 

@@ -35,14 +35,29 @@ function viderPanier() {
   }
   
 
-  
+// === Vérification avant le paiement ===
+  document.addEventListener("DOMContentLoaded", () => {
+  const boutonPayer = document.getElementById("btn-payer");
+
+  if (boutonPayer) {
+    boutonPayer.addEventListener("click", function (event) {
+      const panier = JSON.parse(localStorage.getItem("panier")) || [];
+
+      if (panier.length === 0) {
+        event.preventDefault(); // Bloque la redirection
+        alert("Votre panier est vide. Veuillez ajouter des produits avant de payer.");
+      }
+    });
+  }
+});
+
 
   // ==== Filtres ====
      boutonsFiltre.forEach(btn => {
      btn.addEventListener("click", () => {
       const cat = btn.getAttribute("data-categorie");
       champRecherche.value = ""; // Réinitialiser la recherche
-      afficherProduits(cat); // Appeler avec la catégorie sélectionnée
+      afficherProduits(cat); // Appelle de la catégorie sélectionnée
     });
   });
   
